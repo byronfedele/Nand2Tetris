@@ -14,6 +14,6 @@ CHIP And {
     OUT out;
 
     PARTS:
-    Nand(a=a, b=b, out=nandout);
-    Not(in=nandout, out=out);
+    Nand(a=a, b=b, out=nandout);// nandout will be 0 if both a and b are 1
+    Not(in=nandout, out=out); // output will be 1 if nandout is 0
     }
